@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Afya Hub - Sign Up</title>
+  
+  <!-- Link to your CSS stylesheet -->
+  <link rel="stylesheet" href="Afya Hub WebPagestyling.css">
+</head>
+<body>
+  
+  <!-- Header section with links to different parts of the page -->
+  <header>
+    <nav>
+      <ul>
+        <a href="Afya Hub WebPage.html" class="button">Home</a>
+        <br></br>
+        <a href="Afya Hub Sign In.html" class="button">Sign In</a>
+        <br></br>
+        <a href="Afya Hub User Profile.html" class="button">User Profile</a>
+        <br></br>
+        <a href="Afya Hub Services.html" class="button">Services</a>
+        <br></br>
+        <a href="Afya Hub About Us.html" class="button">About Us</a>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Sign Up section -->
+  <main>
+    <section id="signup">
+      <!-- Your Sign up form here -->
+      <h2>Sign Up</h2>
+      <form action="process-form.php" method="post" onsubmit="return validateForm()">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required><br>
+          <span id="name-error" class="error"></span>
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required><br>
+          <span id="lastname-error" class="error"></span>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+          <span id="email-error" class="error"></span>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+          <span id="password-error" class="error"></span>
+
+          <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+  
+</body>
+</html>
